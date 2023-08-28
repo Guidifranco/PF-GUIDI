@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/extra/favicon.ico.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- link boostrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- hoja de estilos css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>FC7</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-toggler">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../extra/baloncesto.ico.png" width="50px" alt="logo">
+                    </a>
+                    <ul class="navbar-nav d-flex align-items-center justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./clubes.html">Clubes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./seleccion.html">Selección</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./multimedia.html">Multimedia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h1>Contacto</h1>
+
+            <form class="formulario">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1">Nombre</label>
+                    <input type="text" placeholder="escribe aqui tu nombre" id="nombre" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email </label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Deja un mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3"> Enviar </button>
+                    <button type="reset" class="btn btn-primary mb-3"> Restablecer </button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        &copy;2023
+    </footer>
+
+    <!-- link boostrap js -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

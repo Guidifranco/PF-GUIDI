@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;700&display=swap');
+/*letras para los h1*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400;700&family=Open+Sans&display=swap');
+/*letras para los titilos*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;700&family=Open+Sans&display=swap');
+/*letras para el body*/
+
+body {
+    background-color: #33363c ;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.navegacion li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar{
+    padding: 2rem;
+    background-color: #6edff6  ;
+}
+
+.navbar-collapse{
+    justify-content:space-between;
+    align-items: center;
+}
+
+.navbar-nav{
+    font-size: 1.4rem;
+}
+
+.trayectoria{
+    display: grid;
+    padding: 15px;
+    grid-template-columns: repeat(3,fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+    "trayectoria-peñarol trayectoria-peñarol trayectoria-peñarol"
+    "trayectoria-madrid trayectoria-madrid trayectoria-madrid"
+    "trayectoria-murcia trayectoria-murcia trayectoria-murcia"
+    "trayectoria-denver trayectoria-denver trayectoria-denver"
+    "trayectoria-dallas trayectoria-dallas trayectoria-dallas"
+    "trayectoria-serbia trayectoria-serbia trayectoria-serbia";
+}
+
+.trayectoria-peñarol{
+    grid-area: trayectoria-peñarol;
+    display: flex ;
+    align-items: center;;
+    gap: 8px;
+    padding: 35px;
+}
+.trayectoria-madrid{
+    grid-area: trayectoria-madrid;
+    display: flex ;
+    flex-direction: row-reverse;
+    align-items:center;
+    gap: 8px;
+    padding: 35px;
+}
+.trayectoria-murcia{
+    grid-area: trayectoria-murcia;
+    display: flex ;
+    align-items: center;
+    gap: 8px;
+    padding: 35px;
+}
+.trayectoria-denver{
+    grid-area: trayectoria-denver;
+    display: flex ;
+    flex-direction: row-reverse;
+    align-items:center;
+    gap: 8px;
+    padding: 35px;
+}
+.trayectoria-dallas{
+    grid-area: trayectoria-dallas;
+    display: flex ;
+    align-items: center;
+    gap: 8px;
+    padding: 35px;
+}
+.trayectoria-serbia{
+    grid-area: trayectoria-serbia;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items:center;
+    gap: 8px;
+    padding: 35px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.trayectoria__imagenpeñarol{
+    height: 300px;
+    width: 400px;
+}
+
+.trayectoria__imagenmadrid{
+    height: 400px;
+    width: 900px;
+}
+
+.trayectoria__imagenmurcia{
+    height: 400px;
+    width: 600px;
+}
+
+.trayectoria__imagendenver{
+    height: 400px;
+    width: 700px;
+}
+
+.trayectoria__imagendallas{
+    height: 320px;
+    width: 450px;
+}
+
+.trayectoria__imagenserbia{
+    height: 320px;
+    width: 450px;
+}
+.titulo-secundario{
+    font-size: 2em;
+}
+
+#titulo_principal {
+    color: #edebd7;
+    font-size: 3em;
+}
+
+
+.img-principal {
+    height: 599px;
+    width: 499px;
+    background-color: #423e37;
+} 
+
+.texto-principal {
+    font-size: 1.3em;
+    padding: 8px;
+    width: 50%;
+}
+
+.noticia {
+    display: block;
+    height: 400px;
+    width: 500px;
+    padding: 10px;
+} 
+
+.link-noticia {
+    text-decoration: none;
+    color: #423E37;
+}
+
+.link-noticia:hover {
+    color: #edebd7;
+} 
+
+.link-noticia:active {
+    color: black;
+}
+
+ .calendario {
+    display: block;
+    height: 250px;
+    width: 500px;
+    padding: 10px;
+}
+
+
+.img-seleccion {
+    width: 400px;
+    height: 300px;
+}
+
+.parrafo-seleccion {
+    grid-area: parrafo-seleccion;
+    font-size: 1.15em;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.seleccion{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "parrafo-seleccion parrafo-seleccion parrafo-seleccion"
+    "seleccion__primerpuesto seleccion__segundopuesto seleccion__tercerpuesto";
+}
+
+.accordion{
+    margin: 25px;
+    padding: 15px;
+}
+
+
+.accordion-button{
+    background-color: rgba(82, 175, 201, 0.584);
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.highlights{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "titulo-secundario_highlights titulo-secundario__highlights" 
+    "highlights__mago highlights__mago"
+    "highlights__nba highlights__seleccion";
+}
+
+.highlights__mago{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 550px;
+    padding: 15px;
+    grid-area: highlights__mago;
+}
+.highlights__nba{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: highlights__nba;
+
+}
+.highlights__seleccion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: highlights__seleccion;
+
+}
+
+.titulo-secundario__highlights{
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    grid-area: titulo-secundario__highlights;
+}
+
+
+.video {
+    width: 400px;
+    height: 400px;
+}
+
+.formulario {
+    font-size: 1.3rem;
+    padding: 5px;
+    margin: 25px;
+    border: 2px solid black
+}
+
+.input {
+    margin: 5px;
+}
+
+
+/* mediaqueries */
+@media screen and (max-width: 767px) {
+    .navbar-brand{
+        display: none;
+    }
+}
