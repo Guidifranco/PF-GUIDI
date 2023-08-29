@@ -144,58 +144,6 @@ a{
     height: 320px;
     width: 450px;
 }
-.titulo-secundario{
-    font-size: 2em;
-}
-
-#titulo_principal {
-    color: #edebd7;
-    font-size: 3em;
-    margin: 15px;
-    text-decoration:underline;
-    text-decoration-color: #6edff6;
-}
-
-
-.img-principal {
-    height: 599px;
-    width: 499px;
-    background-color: #423e37;
-} 
-
-.texto-principal {
-    font-size: 1.3em;
-    padding: 8px;
-    margin-bottom: 30px;
-    width: 50%;
-}
-
-.noticia {
-    display: block;
-    height: 400px;
-    width: 500px;
-    padding: 10px;
-} 
-
-.link-noticia {
-    text-decoration: none;
-    color: #423E37;
-}
-
-.link-noticia:hover {
-    color: #edebd7;
-} 
-
-.link-noticia:active {
-    color: black;
-}
-
- .calendario {
-    display: block;
-    height: 250px;
-    width: 500px;
-    padding: 10px;
-}
 
 .titulo-secundario{
     font-size: 2.5em;
