@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;700&display=swap');
+/*letras para los h1*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400;700&family=Open+Sans&display=swap');
+/*letras para los titilos*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;700&family=Open+Sans&display=swap');
+/*letras para el body*/
+
+body {
+    background-color: #33363c;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+
+    h1 {
+        font-family: 'Anton', sans-serif;
+    }
+    
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .navegacion li {
+        list-style: none;
+    }
+}
+
+.navbar {
+    padding: 2rem;
+    margin-bottom: 100px;
+    background-color: #6edff6;
+
+    .navbar-collapse {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar-nav{
+        font-size: 1.4rem;
+    }
+}
+
+/* index */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    #titulo_principal {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #edebd7;
+        font-size: 3em;
+        text-decoration: underline;
+        text-decoration-color: #6edff6;
+    }
+
+    .titulo-secundario {
+        display: flex;
+        justify-content: center;
+        font-size: 2.5em;
+        color: #edebd7;
+        text-decoration: underline;
+        text-decoration-color: #6edff6;
+    }
+
+    .img-principal {
+        height: 50vw;
+        margin: 15px;
+        background-color: #423e37;
+    }
+
+    .texto-principal {
+        font-size: 1.4em;
+        padding: 8px;
+        margin-bottom: 30px;
+        width: 65%;
+    }
+
+    .img-seleccion {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+.news{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    #titulo-noticia {
+        font-size: 2.5rem;
+        text-decoration: underline;
+        text-decoration-color: #6edff6;
+    }
+}
+
+.carousel {
+    margin-top: 15px;
+    margin-bottom: 55px;
+    padding: 5px;
+
+    #carouselNoticias .carousel-item img {
+        height: 40vw;
+    }
+}
+
+/* clubes */
+.trayectoria{
+    display: grid;
+    padding: 15px;
+    grid-template-columns: repeat(3, fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+        "trayectoria-peñarol trayectoria-peñarol trayectoria-peñarol"
+        "trayectoria-madrid trayectoria-madrid trayectoria-madrid"
+        "trayectoria-murcia trayectoria-murcia trayectoria-murcia"
+        "trayectoria-denver trayectoria-denver trayectoria-denver"
+        "trayectoria-dallas trayectoria-dallas trayectoria-dallas"
+        "trayectoria-serbia trayectoria-serbia trayectoria-serbia";
+
+        .texto-equipo {
+            display: flex;
+            align-items: center;
+            font-size: 1.1em;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .trayectoria-peñarol {
+            grid-area: trayectoria-peñarol;
+            display: flex;
+            align-items: center;
+            ;
+            gap: 8px;
+            padding: 10px;
+        }
+        
+        .trayectoria-madrid {
+            grid-area: trayectoria-madrid;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            gap: 8px;
+            padding: 10px;
+        }
+        
+        .trayectoria-murcia {
+            grid-area: trayectoria-murcia;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px;
+        }
+        
+        .trayectoria-denver {
+            grid-area: trayectoria-denver;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            gap: 8px;
+            padding: 10px;
+        }
+        
+        .trayectoria-dallas {
+            grid-area: trayectoria-dallas;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px;
+        }
+        
+        .trayectoria-serbia {
+            grid-area: trayectoria-serbia;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            gap: 8px;
+            padding: 10px;
+        }
+
+        .trayectoria__imagenpeñarol {
+            height: 25vw;
+        }
+        
+        .trayectoria__imagenmadrid {
+            height: 30vw;
+        }
+        
+        .trayectoria__imagenmurcia {
+            height: 25vw;
+        }
+        
+        .trayectoria__imagendenver {
+            height: 30vw;
+        }
+        
+        .trayectoria__imagendallas {
+            height: 20vw;
+        }
+        
+        .trayectoria__imagenserbia {
+            height: 20vw;
+        }
+        
+
+}
+
+/* selección */
+.seleccion {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "parrafo-seleccion parrafo-seleccion parrafo-seleccion"
+        "seleccion__primerpuesto seleccion__segundopuesto seleccion__tercerpuesto";
+
+        .parrafo-seleccion {
+            grid-area: parrafo-seleccion;
+            font-size: 1.15em;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .accordion {
+            margin: 25px;
+            padding: 15px;
+        }
+        
+            .accordion-button {
+                background-color: #6edff6;
+                font-size: 1.5rem;
+                align-items: center;
+             justify-content: center;
+            }
+}
+
+/* multimedia */
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "highlights__mago highlights__mago"
+        "highlights__nba highlights__seleccion";
+
+        .video {
+            width: 400px;
+            height: 400px;
+        }
+
+
+        .highlights__mago {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            height: 550px;
+            padding: 15px;
+            grid-area: highlights__mago;
+        }
+        
+        .highlights__nba {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            grid-area: highlights__nba;
+        
+        }
+        
+        .highlights__seleccion {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            grid-area: highlights__seleccion;
+        
+        }
+}
