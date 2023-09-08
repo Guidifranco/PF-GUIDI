@@ -1,0 +1,198 @@
+/* mediaqueries */
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
+/* Media del index */
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .texto-principal {
+        width: 75%;
+    }
+
+    #titulo_principal {
+        font-size: 2.3em;
+    }
+
+    .img-principal {
+        height: 65vw;
+    }
+
+    #carouselNoticias .carousel-item img {
+        height: 50vw;
+    }
+}
+
+/* Media de los clubes */
+
+@media (min-width:480px) and (max-width: 767px) {
+
+    .trayectoria {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trayectoria-peñarol {
+        display: block;
+        margin: 10px;
+    }
+
+    .trayectoria-madrid {
+        display: block;
+        margin: 10px;
+    }
+
+    .trayectoria-murcia {
+        display: block;
+        margin: 10px;
+    }
+
+    .trayectoria-denver {
+        display: block;
+        margin: 10px;
+    }
+
+    .trayectoria-dallas {
+        display: block;
+        margin: 10px;
+    }
+
+    .trayectoria-serbia {
+        display: block;
+        margin: 10px;
+    }
+
+
+    .trayectoria__imagenpeñarol {
+        margin-left: 20%;
+        height: 40vw;
+    }
+
+    .trayectoria__imagenmadrid {
+        margin-left: 35%;
+        height: 50vw;
+    }
+
+    .trayectoria__imagenmurcia {
+        margin-left: 30%;
+        height: 50vw;
+    }
+
+    .trayectoria__imagendenver {
+        margin-left: 35%;
+        height: 50vw;
+    }
+
+    .trayectoria__imagendallas {
+        margin-left: 10%;
+        height: 40vw;
+    }
+
+    .trayectoria__imagenserbia {
+        margin-left: 10%;
+        height: 40vw;
+    }
+}
+
+/* Media 480 index */
+@media (max-width:480px) {
+    .texto-principal {
+        width: 90%;
+    }
+
+    #titulo_principal {
+        font-size: 1.55em;
+    }
+
+    .img-principal {
+        height: 60vw;
+    }
+
+    #carouselNoticias .carousel-item img {
+        height: 55vw;
+    }
+}
+
+/* Media 480 Clubes */
+@media (max-width:480px) {
+    .titulo-secundario {
+        font-size: 2.2em;
+    }
+
+    .trayectoria {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trayectoria-peñarol {
+        display: block;
+        margin: 10px;
+    }
+
+    .trayectoria-madrid {
+        display: block;
+        margin: 10px;
+    }
+
+    .trayectoria-murcia {
+        display: block;
+        margin: 10px;
+    }
+
+    .trayectoria-denver {
+        display: block;
+        margin: 10px;
+    }
+
+    .trayectoria-dallas {
+        display: block;
+        margin: 10px;
+    }
+
+    .trayectoria-serbia {
+        display: block;
+        margin: 10px;
+    }
+
+
+    .trayectoria__imagenpeñarol {
+        margin-left: 15%;
+        height: 40vw;
+    }
+
+    .trayectoria__imagenmadrid {
+        margin-left: 30%;
+        height: 50vw;
+    }
+
+    .trayectoria__imagenmurcia {
+        margin-left: 25%;
+        height: 50vw;
+    }
+
+    .trayectoria__imagendenver {
+        margin-left: 30%;
+        height: 50vw;
+    }
+
+    .trayectoria__imagendallas {
+        margin-left: 5%;
+        height: 40vw;
+    }
+
+    .trayectoria__imagenserbia {
+        margin-left: 5%;
+        height: 40vw;
+    }
+
+    .texto-principal{
+        width: 100%;
+    }
+    .texto-equipo{
+        width: 100%;
+        margin-top: 5px;
+
+    }
+}
