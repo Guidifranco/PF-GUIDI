@@ -184,7 +184,7 @@ body .navegacion li {
 /* selección */
 .seleccion {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-template-rows: auto;
   grid-template-areas: "parrafo-seleccion parrafo-seleccion parrafo-seleccion" "seleccion__primerpuesto seleccion__segundopuesto seleccion__tercerpuesto";
 }
@@ -199,9 +199,19 @@ body .navegacion li {
   margin: 25px;
   padding: 15px;
 }
+.seleccion .accordion-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .seleccion .accordion-button {
   background-color: #6edff6;
   font-size: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.seleccion li {
+  font-size: 1.3em;
   align-items: center;
   justify-content: center;
 }
@@ -323,6 +333,15 @@ body .navegacion li {
   .trayectoria__imagenserbia {
     margin-left: 10%;
     height: 40vw;
+  }
+}
+/* Media de la Seleccion */
+@media (min-width: 480px) and (max-width: 767px) {
+  .titulo-secundario {
+    font-size: 1.4em;
+  }
+  .texto-principal {
+    width: 100%;
   }
 }
 /* Media 480 index */

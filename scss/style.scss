@@ -220,7 +220,7 @@ body {
 /* selección */
 .seleccion {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
         "parrafo-seleccion parrafo-seleccion parrafo-seleccion"
@@ -233,17 +233,28 @@ body {
             display: flex;
             justify-content: $centro;
         }
-
         .accordion {
             margin: 25px;
             padding: 15px;
         }
+
+            .accordion-body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
         
             .accordion-button {
                 background-color: $celeste;
                 font-size: 1.5rem;
                 align-items: $centro;
              justify-content: $centro;
+            }
+
+            li{
+                font-size: 1.3em;
+                align-items: $centro;
+                justify-content: $centro;
             }
 }
 

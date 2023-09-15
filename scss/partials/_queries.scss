@@ -96,6 +96,16 @@
     }
 }
 
+/* Media de la Seleccion */
+@media (min-width: 480px) and (max-width: 767px) {
+    .titulo-secundario{
+        font-size: 1.4em;
+    }
+    .texto-principal {
+        width: 100%;
+    }
+}
+
 /* Media 480 index */
 @media (max-width:480px) {
     .texto-principal {
