@@ -88,8 +88,8 @@ body {
     }
 
     .img-seleccion {
-        width: 400px;
-        height: 300px;
+        width: 500px;
+        height: 400px;
     }
 }
 
@@ -289,6 +289,12 @@ body {
             justify-content: $espacio;
             align-items: $centro;
             grid-area: highlights__nba;
+
+            .nba-video{
+                width: 90%;
+                margin: 5px;
+                margin-bottom: 15px;
+            }
         
         }
         
@@ -299,6 +305,11 @@ body {
             align-items: $centro;
             grid-area: highlights__seleccion;
         
+            .seleccion-video{
+                width: 90%;
+                margin: 5px;
+                margin-bottom: 15px;
+            }
         }
 }
 

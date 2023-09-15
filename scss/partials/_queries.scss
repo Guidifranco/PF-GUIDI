@@ -34,179 +34,295 @@
     .trayectoria {
         display: flex;
         flex-direction: column;
-    }
-
-    .trayectoria-peñarol {
-        display: block;
-        margin: 10px;
-    }
-
-    .trayectoria-madrid {
-        display: block;
-        margin: 10px;
-    }
-
-    .trayectoria-murcia {
-        display: block;
-        margin: 10px;
-    }
-
-    .trayectoria-denver {
-        display: block;
-        margin: 10px;
-    }
-
-    .trayectoria-dallas {
-        display: block;
-        margin: 10px;
-    }
-
-    .trayectoria-serbia {
-        display: block;
-        margin: 10px;
-    }
 
 
-    .trayectoria__imagenpeñarol {
-        margin-left: 20%;
-        height: 40vw;
-    }
+        .trayectoria-peñarol {
+            display: block;
+            margin: 10px;
+        }
 
-    .trayectoria__imagenmadrid {
-        margin-left: 35%;
-        height: 50vw;
-    }
+        .trayectoria-madrid {
+            display: block;
+            margin: 10px;
+        }
 
-    .trayectoria__imagenmurcia {
-        margin-left: 30%;
-        height: 50vw;
-    }
+        .trayectoria-murcia {
+            display: block;
+            margin: 10px;
+        }
 
-    .trayectoria__imagendenver {
-        margin-left: 35%;
-        height: 50vw;
-    }
+        .trayectoria-denver {
+            display: block;
+            margin: 10px;
+        }
 
-    .trayectoria__imagendallas {
-        margin-left: 10%;
-        height: 40vw;
-    }
+        .trayectoria-dallas {
+            display: block;
+            margin: 10px;
+        }
 
-    .trayectoria__imagenserbia {
-        margin-left: 10%;
-        height: 40vw;
+        .trayectoria-serbia {
+            display: block;
+            margin: 10px;
+        }
+
+
+        .trayectoria__imagenpeñarol {
+            margin-left: 20%;
+            height: 40vw;
+        }
+
+        .trayectoria__imagenmadrid {
+            margin-left: 35%;
+            height: 50vw;
+        }
+
+        .trayectoria__imagenmurcia {
+            margin-left: 30%;
+            height: 50vw;
+        }
+
+        .trayectoria__imagendenver {
+            margin-left: 35%;
+            height: 50vw;
+        }
+
+        .trayectoria__imagendallas {
+            margin-left: 10%;
+            height: 40vw;
+        }
+
+        .trayectoria__imagenserbia {
+            margin-left: 10%;
+            height: 40vw;
+        }
     }
 }
 
 /* Media de la Seleccion */
 @media (min-width: 480px) and (max-width: 767px) {
-    .titulo-secundario {
-        font-size: 1.4em;
-    }
+    .container {
+        .titulo-secundario {
+            font-size: 2.6em;
+        }
 
-    .texto-principal {
-        width: 100%;
+        .texto-principal {
+            width: 85%;
+            font-size: 1.3em;
+        }
+        .img-seleccion{
+            width: 400px;
+            height: 300px;
+        }
+    }
+    .seleccion{
+        .parrafo-seleccion{
+            display: flex;
+            align-items: $centro;
+            justify-content: $centro;
+            width: 95%;
+            margin: 15px;
+        }
+    }
+}
+
+/* Media de Multimedia */
+@media (min-width: 480px) and (max-width: 767px) {
+    .highlights{
+        display: flex;
+        flex-direction: column;
+        align-items: $centro;
+        justify-content: $centro;
+
+        .highlights__nba{
+            width: 90%;
+            margin: 10px;
+
+            .nba-video{
+                width: 90%;
+                margin: 5px;
+            }
+        }
+
+        .highlights__seleccion{
+            width: 90%;
+            margin: 10px;
+
+            .seleccion-video{
+                width: 90%;
+                margin: 5px;
+            }
+        }
     }
 }
 
 /* Media 480 index */
 @media (max-width:480px) {
-    .texto-principal {
-        width: 90%;
-    }
+    .container {
+        .texto-principal {
+            width: 90%;
+            font-size: 1.2em;
+        }
 
-    #titulo_principal {
-        font-size: 1.55em;
-    }
+        #titulo_principal {
+            font-size: 1.55em;
+        }
 
-    .img-principal {
-        height: 60vw;
-    }
+        .img-principal {
+            height: 60vw;
+        }
 
-    #carouselNoticias .carousel-item img {
-        height: 55vw;
+        #carouselNoticias .carousel-item img {
+            height: 55vw;
+        }
     }
 }
 
 /* Media 480 Clubes */
 @media (max-width:480px) {
-    .titulo-secundario {
-        font-size: 2.2em;
+
+    .container {
+        .titulo-secundario {
+            font-size: 1.7em;
+        }
+
+        .texto-principal {
+            width: 100%;
+        }
     }
 
     .trayectoria {
         display: flex;
         flex-direction: column;
+
+        .trayectoria-peñarol {
+            display: block;
+            margin: 10px;
+        }
+
+        .trayectoria-madrid {
+            display: block;
+            margin: 10px;
+        }
+
+        .trayectoria-murcia {
+            display: block;
+            margin: 10px;
+        }
+
+        .trayectoria-denver {
+            display: block;
+            margin: 10px;
+        }
+
+        .trayectoria-dallas {
+            display: block;
+            margin: 10px;
+        }
+
+        .trayectoria-serbia {
+            display: block;
+            margin: 10px;
+        }
+
+
+        .trayectoria__imagenpeñarol {
+            margin-left: 15%;
+            height: 40vw;
+        }
+
+        .trayectoria__imagenmadrid {
+            margin-left: 30%;
+            height: 50vw;
+        }
+
+        .trayectoria__imagenmurcia {
+            margin-left: 25%;
+            height: 50vw;
+        }
+
+        .trayectoria__imagendenver {
+            margin-left: 30%;
+            height: 50vw;
+        }
+
+        .trayectoria__imagendallas {
+            margin-left: 5%;
+            height: 40vw;
+        }
+
+        .trayectoria__imagenserbia {
+            margin-left: 5%;
+            height: 40vw;
+        }
+
+        .texto-equipo {
+            width: 100%;
+            margin-top: 5px;
+            padding: 5px;
+
+        }
     }
+}
 
-    .trayectoria-peñarol {
-        display: block;
-        margin: 10px;
+/* Media 480 Seleccion */
+@media (max-width:480px) {
+    .container{
+        .titulo-secundario{
+            font-size: 2.1em;
+        }
+        .texto-principal{
+            width: 90%;
+            font-size: 1.2em;
+            padding: 0;
+        }
+        .img-seleccion{
+            width: 330px;
+            height: 230px;
+        }
     }
-
-    .trayectoria-madrid {
-        display: block;
-        margin: 10px;
+    .seleccion{
+        .parrafo-seleccion{
+            display: flex;
+            align-items: $centro;
+            justify-content: $centro;
+            margin: 15px;
+        }
     }
+}
 
-    .trayectoria-murcia {
-        display: block;
-        margin: 10px;
-    }
+/* Media 480 Multimedia */
+@media (max-width:480px){
+    .highlights{
+        display: flex;
+        flex-direction: column;
+        align-items: $centro;
+        justify-content: $centro;
 
-    .trayectoria-denver {
-        display: block;
-        margin: 10px;
-    }
+        .video{
+            height: 335px;
+            width: 335px;
+            margin: 5px;
+        }
 
-    .trayectoria-dallas {
-        display: block;
-        margin: 10px;
-    }
+        .highlights__nba{
+            width: 90%;
+            margin: 10px;
 
-    .trayectoria-serbia {
-        display: block;
-        margin: 10px;
-    }
+            .nba-video{
+                width: 90%;
+                margin: 5px;
+            }
+        }
 
+        .highlights__seleccion{
+            width: 90%;
+            margin: 10px;
 
-    .trayectoria__imagenpeñarol {
-        margin-left: 15%;
-        height: 40vw;
-    }
-
-    .trayectoria__imagenmadrid {
-        margin-left: 30%;
-        height: 50vw;
-    }
-
-    .trayectoria__imagenmurcia {
-        margin-left: 25%;
-        height: 50vw;
-    }
-
-    .trayectoria__imagendenver {
-        margin-left: 30%;
-        height: 50vw;
-    }
-
-    .trayectoria__imagendallas {
-        margin-left: 5%;
-        height: 40vw;
-    }
-
-    .trayectoria__imagenserbia {
-        margin-left: 5%;
-        height: 40vw;
-    }
-
-    .texto-principal {
-        width: 100%;
-    }
-
-    .texto-equipo {
-        width: 100%;
-        margin-top: 5px;
-
+            .seleccion-video{
+                width: 90%;
+                margin: 5px;
+            }
+        }
     }
 }
