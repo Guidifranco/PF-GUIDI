@@ -14,7 +14,7 @@ body {
     h1 {
         font-family: 'Anton', sans-serif;
     }
-    
+
     h2,
     h3,
     h4,
@@ -43,13 +43,13 @@ body {
         align-items: $centro;
     }
 
-    .navbar-nav{
+    .navbar-nav {
         font-size: 1.4rem;
     }
 }
 
 /* index */
-.container{
+.container {
     display: flex;
     flex-direction: column;
     justify-content: $centro;
@@ -75,7 +75,8 @@ body {
     }
 
     .img-principal {
-        height: 50vw;
+        height: 700px;
+        width: 600px;
         margin: 15px;
         background-color: $fondo;
     }
@@ -93,7 +94,7 @@ body {
     }
 }
 
-.news{
+.news {
     margin-top: 20px;
     display: flex;
     align-items: $centro;
@@ -104,6 +105,7 @@ body {
         text-decoration: underline;
         text-decoration-color: $celeste;
     }
+
 }
 
 .carousel {
@@ -111,13 +113,19 @@ body {
     margin-bottom: 55px;
     padding: 5px;
 
-    #carouselNoticias .carousel-item img {
-        height: 40vw;
+    #carouselNoticias .carousel-inner .carousel-item img {
+        width: 75vw;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
 /* clubes */
-.trayectoria{
+.trayectoria {
     display: grid;
     padding: 15px;
     grid-template-columns: repeat(3, fr);
@@ -130,90 +138,90 @@ body {
         "trayectoria-dallas trayectoria-dallas trayectoria-dallas"
         "trayectoria-serbia trayectoria-serbia trayectoria-serbia";
 
-        .texto-equipo {
-            display: flex;
-            align-items: $centro;
-            font-size: 1.1em;
-            padding: 10px;
-            margin: 5px;
-        }
+    .texto-equipo {
+        display: flex;
+        align-items: $centro;
+        font-size: 1.1em;
+        padding: 10px;
+        margin: 5px;
+    }
 
-        .trayectoria-peñarol {
-            grid-area: trayectoria-peñarol;
-            display: flex;
-            align-items: $centro;
-            ;
-            gap: 8px;
-            padding: 10px;
-        }
-        
-        .trayectoria-madrid {
-            grid-area: trayectoria-madrid;
-            display: flex;
-            flex-direction: row-reverse;
-            align-items: $centro;
-            gap: 8px;
-            padding: 10px;
-        }
-        
-        .trayectoria-murcia {
-            grid-area: trayectoria-murcia;
-            display: flex;
-            align-items: $centro;
-            gap: 8px;
-            padding: 10px;
-        }
-        
-        .trayectoria-denver {
-            grid-area: trayectoria-denver;
-            display: flex;
-            flex-direction: row-reverse;
-            align-items: $centro;
-            gap: 8px;
-            padding: 10px;
-        }
-        
-        .trayectoria-dallas {
-            grid-area: trayectoria-dallas;
-            display: flex;
-            align-items: $centro;
-            gap: 8px;
-            padding: 10px;
-        }
-        
-        .trayectoria-serbia {
-            grid-area: trayectoria-serbia;
-            display: flex;
-            flex-direction: row-reverse;
-            align-items: $centro;
-            gap: 8px;
-            padding: 10px;
-        }
+    .trayectoria-peñarol {
+        grid-area: trayectoria-peñarol;
+        display: flex;
+        align-items: $centro;
+        ;
+        gap: 8px;
+        padding: 10px;
+    }
 
-        .trayectoria__imagenpeñarol {
-            height: 25vw;
-        }
-        
-        .trayectoria__imagenmadrid {
-            height: 30vw;
-        }
-        
-        .trayectoria__imagenmurcia {
-            height: 25vw;
-        }
-        
-        .trayectoria__imagendenver {
-            height: 30vw;
-        }
-        
-        .trayectoria__imagendallas {
-            height: 20vw;
-        }
-        
-        .trayectoria__imagenserbia {
-            height: 20vw;
-        }
-        
+    .trayectoria-madrid {
+        grid-area: trayectoria-madrid;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: $centro;
+        gap: 8px;
+        padding: 10px;
+    }
+
+    .trayectoria-murcia {
+        grid-area: trayectoria-murcia;
+        display: flex;
+        align-items: $centro;
+        gap: 8px;
+        padding: 10px;
+    }
+
+    .trayectoria-denver {
+        grid-area: trayectoria-denver;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: $centro;
+        gap: 8px;
+        padding: 10px;
+    }
+
+    .trayectoria-dallas {
+        grid-area: trayectoria-dallas;
+        display: flex;
+        align-items: $centro;
+        gap: 8px;
+        padding: 10px;
+    }
+
+    .trayectoria-serbia {
+        grid-area: trayectoria-serbia;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: $centro;
+        gap: 8px;
+        padding: 10px;
+    }
+
+    .trayectoria__imagenpeñarol {
+        height: 25vw;
+    }
+
+    .trayectoria__imagenmadrid {
+        height: 30vw;
+    }
+
+    .trayectoria__imagenmurcia {
+        height: 25vw;
+    }
+
+    .trayectoria__imagendenver {
+        height: 30vw;
+    }
+
+    .trayectoria__imagendallas {
+        height: 20vw;
+    }
+
+    .trayectoria__imagenserbia {
+        height: 20vw;
+    }
+
 
 }
 
@@ -226,36 +234,37 @@ body {
         "parrafo-seleccion parrafo-seleccion parrafo-seleccion"
         "seleccion__primerpuesto seleccion__segundopuesto seleccion__tercerpuesto";
 
-        .parrafo-seleccion {
-            grid-area: parrafo-seleccion;
-            font-size: 1.15em;
-            padding: 10px;
-            display: flex;
-            justify-content: $centro;
-        }
-        .accordion {
-            margin: 25px;
-            padding: 15px;
-        }
+    .parrafo-seleccion {
+        grid-area: parrafo-seleccion;
+        font-size: 1.15em;
+        padding: 10px;
+        display: flex;
+        justify-content: $centro;
+    }
 
-            .accordion-body {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-        
-            .accordion-button {
-                background-color: $celeste;
-                font-size: 1.5rem;
-                align-items: $centro;
-             justify-content: $centro;
-            }
+    .accordion {
+        margin: 25px;
+        padding: 15px;
+    }
 
-            li{
-                font-size: 1.3em;
-                align-items: $centro;
-                justify-content: $centro;
-            }
+    .accordion-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .accordion-button {
+        background-color: $celeste;
+        font-size: 1.5rem;
+        align-items: $centro;
+        justify-content: $centro;
+    }
+
+    li {
+        font-size: 1.3em;
+        align-items: $centro;
+        justify-content: $centro;
+    }
 }
 
 /* multimedia */
@@ -267,58 +276,121 @@ body {
         "highlights__mago highlights__mago"
         "highlights__nba highlights__seleccion";
 
-        .video {
-            width: 400px;
-            height: 400px;
-        }
+    .video {
+        width: 400px;
+        height: 400px;
+    }
 
 
-        .highlights__mago {
-            display: flex;
-            justify-content: $centro;
-            flex-direction: column;
-            align-items: $centro;
-            height: 550px;
-            padding: 15px;
-            grid-area: highlights__mago;
-        }
-        
-        .highlights__nba {
-            display: flex;
-            flex-direction: column;
-            justify-content: $espacio;
-            align-items: $centro;
-            grid-area: highlights__nba;
+    .highlights__mago {
+        display: flex;
+        justify-content: $centro;
+        flex-direction: column;
+        align-items: $centro;
+        height: 550px;
+        padding: 15px;
+        grid-area: highlights__mago;
+    }
 
-            .nba-video{
-                width: 90%;
-                margin: 5px;
-                margin-bottom: 15px;
-            }
-        
+    .highlights__nba {
+        display: flex;
+        flex-direction: column;
+        justify-content: $espacio;
+        align-items: $centro;
+        grid-area: highlights__nba;
+
+        .nba-video {
+            width: 90%;
+            margin: 5px;
+
         }
-        
-        .highlights__seleccion {
-            display: flex;
-            flex-direction: column;
-            justify-content: $espacio;
-            align-items: $centro;
-            grid-area: highlights__seleccion;
-        
-            .seleccion-video{
-                width: 90%;
-                margin: 5px;
-                margin-bottom: 15px;
-            }
+
+    }
+
+    .highlights__seleccion {
+        display: flex;
+        flex-direction: column;
+        justify-content: $espacio;
+        align-items: $centro;
+        grid-area: highlights__seleccion;
+
+        .seleccion-video {
+            width: 90%;
+            margin: 5px;
         }
+    }
 }
 
 /* contacto */
-.formulario{
+.formulario {
     font-size: 1.3rem;
     padding: 5px;
     margin: 25px;
     border: 2px solid black
+}
+
+.footer {
+    width: 100%;
+    background-color: $celeste;
+    margin-top: 50px;
+
+    .grupo-1 {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 25px 20px;
+
+        .box-1 {
+            display: flex;
+            flex-direction: column;
+            align-items: $centro;
+            justify-content: $centro;
+            color: black
+        }
+
+        .box-2 {
+            display: flex;
+            flex-direction: column;
+            align-items: $centro;
+            justify-content: $centro;
+
+            h2{
+                text-decoration: underline;
+            }
+
+            h2, p {
+                color: black;
+                display: flex;
+                flex-direction: row;
+                align-items: $centro;
+                justify-content: $centro;
+                padding: 5px;
+            }
+        }
+
+        .box-3 {
+            display: flex;
+            flex-direction: column;
+            align-items: $centro;
+            justify-content: $centro;
+
+            a {
+                display: inline-block;
+
+            }
+
+            h4 {
+                color: black;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                text-decoration: underline;
+                padding: 5px;
+            }
+        }
+    }
 }
 
 @import "./partials/_queries.scss";

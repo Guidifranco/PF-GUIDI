@@ -18,11 +18,40 @@
         }
 
         .img-principal {
-            height: 65vw;
+            height: 85vw;
+            width: 70vw;
         }
 
         #carouselNoticias .carousel-item img {
-            height: 50vw;
+            height: 60vw;
+        }
+    }
+}
+
+/* Media del Footer */
+@media (min-width: 480px) and (max-width: 767px) {
+
+    .grupo-1 {
+        width: 100%;
+        max-width: 767px;
+        padding: 15px 10px;
+
+        .box-2 {
+            h2 {
+                font-size: 1.3rem;
+                text-decoration: underline;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        .box-3 {
+            h4 {
+                font-size: 1.1rem;
+                text-decoration: underline;
+            }
         }
     }
 }
@@ -36,43 +65,23 @@
         flex-direction: column;
 
 
-        .trayectoria-peñarol {
-            display: block;
-            margin: 10px;
-        }
-
-        .trayectoria-madrid {
-            display: block;
-            margin: 10px;
-        }
-
-        .trayectoria-murcia {
-            display: block;
-            margin: 10px;
-        }
-
-        .trayectoria-denver {
-            display: block;
-            margin: 10px;
-        }
-
-        .trayectoria-dallas {
-            display: block;
-            margin: 10px;
-        }
-
+        .trayectoria-peñarol,
+        .trayectoria-madrid,
+        .trayectoria-murcia,
+        .trayectoria-denver,
+        .trayectoria-dallas,
         .trayectoria-serbia {
             display: block;
             margin: 10px;
         }
-
 
         .trayectoria__imagenpeñarol {
             margin-left: 20%;
             height: 40vw;
         }
 
-        .trayectoria__imagenmadrid {
+        .trayectoria__imagenmadrid,
+        .trayectoria__imagendenver {
             margin-left: 35%;
             height: 50vw;
         }
@@ -82,16 +91,7 @@
             height: 50vw;
         }
 
-        .trayectoria__imagendenver {
-            margin-left: 35%;
-            height: 50vw;
-        }
-
-        .trayectoria__imagendallas {
-            margin-left: 10%;
-            height: 40vw;
-        }
-
+        .trayectoria__imagendallas,
         .trayectoria__imagenserbia {
             margin-left: 10%;
             height: 40vw;
@@ -110,13 +110,15 @@
             width: 85%;
             font-size: 1.3em;
         }
-        .img-seleccion{
+
+        .img-seleccion {
             width: 400px;
             height: 300px;
         }
     }
-    .seleccion{
-        .parrafo-seleccion{
+
+    .seleccion {
+        .parrafo-seleccion {
             display: flex;
             align-items: $centro;
             justify-content: $centro;
@@ -128,27 +130,27 @@
 
 /* Media de Multimedia */
 @media (min-width: 480px) and (max-width: 767px) {
-    .highlights{
+    .highlights {
         display: flex;
         flex-direction: column;
         align-items: $centro;
         justify-content: $centro;
 
-        .highlights__nba{
+        .highlights__nba {
             width: 90%;
             margin: 10px;
 
-            .nba-video{
+            .nba-video {
                 width: 90%;
                 margin: 5px;
             }
         }
 
-        .highlights__seleccion{
+        .highlights__seleccion {
             width: 90%;
             margin: 10px;
 
-            .seleccion-video{
+            .seleccion-video {
                 width: 90%;
                 margin: 5px;
             }
@@ -169,13 +171,31 @@
         }
 
         .img-principal {
-            height: 60vw;
+            height: 85vw;
+            width: 70vw;
         }
 
         #carouselNoticias .carousel-item img {
-            height: 55vw;
+            height: 65vw;
         }
     }
+}
+
+/* Media 480 del Footer */
+@media (max-width:480px) {
+    .footer {
+        .grupo-1 {
+            padding: 15px 10px;
+            display: flex;
+            flex-direction: column;
+        
+            .box-1{
+                padding-bottom: 25px;
+            }
+            
+        }
+    }
+
 }
 
 /* Media 480 Clubes */
@@ -195,43 +215,23 @@
         display: flex;
         flex-direction: column;
 
-        .trayectoria-peñarol {
-            display: block;
-            margin: 10px;
-        }
-
-        .trayectoria-madrid {
-            display: block;
-            margin: 10px;
-        }
-
-        .trayectoria-murcia {
-            display: block;
-            margin: 10px;
-        }
-
-        .trayectoria-denver {
-            display: block;
-            margin: 10px;
-        }
-
-        .trayectoria-dallas {
-            display: block;
-            margin: 10px;
-        }
-
+        .trayectoria-peñarol,
+        .trayectoria-madrid,
+        .trayectoria-murcia,
+        .trayectoria-denver,
+        .trayectoria-dallas,
         .trayectoria-serbia {
             display: block;
             margin: 10px;
         }
-
 
         .trayectoria__imagenpeñarol {
             margin-left: 15%;
             height: 40vw;
         }
 
-        .trayectoria__imagenmadrid {
+        .trayectoria__imagenmadrid,
+        .trayectoria__imagendenver {
             margin-left: 30%;
             height: 50vw;
         }
@@ -241,16 +241,7 @@
             height: 50vw;
         }
 
-        .trayectoria__imagendenver {
-            margin-left: 30%;
-            height: 50vw;
-        }
-
-        .trayectoria__imagendallas {
-            margin-left: 5%;
-            height: 40vw;
-        }
-
+        .trayectoria__imagendallas,
         .trayectoria__imagenserbia {
             margin-left: 5%;
             height: 40vw;
@@ -267,22 +258,25 @@
 
 /* Media 480 Seleccion */
 @media (max-width:480px) {
-    .container{
-        .titulo-secundario{
-            font-size: 2.1em;
+    .container {
+        .titulo-secundario {
+            font-size: 1.7em;
         }
-        .texto-principal{
+
+        .texto-principal {
             width: 90%;
             font-size: 1.2em;
             padding: 0;
         }
-        .img-seleccion{
-            width: 330px;
-            height: 230px;
+
+        .img-seleccion {
+            width: 85vw;
+            height: 75vw;
         }
     }
-    .seleccion{
-        .parrafo-seleccion{
+
+    .seleccion {
+        .parrafo-seleccion {
             display: flex;
             align-items: $centro;
             justify-content: $centro;
@@ -292,34 +286,34 @@
 }
 
 /* Media 480 Multimedia */
-@media (max-width:480px){
-    .highlights{
+@media (max-width:480px) {
+    .highlights {
         display: flex;
         flex-direction: column;
         align-items: $centro;
         justify-content: $centro;
 
-        .video{
-            height: 335px;
-            width: 335px;
+        .video {
+            height: 85vw;
+            width: 85vw;
             margin: 5px;
         }
 
-        .highlights__nba{
+        .highlights__nba {
             width: 90%;
             margin: 10px;
 
-            .nba-video{
+            .nba-video {
                 width: 90%;
                 margin: 5px;
             }
         }
 
-        .highlights__seleccion{
+        .highlights__seleccion {
             width: 90%;
             margin: 10px;
 
-            .seleccion-video{
+            .seleccion-video {
                 width: 90%;
                 margin: 5px;
             }
