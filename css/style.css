@@ -40,6 +40,9 @@ body .navegacion li {
 .navbar .navbar-nav {
   font-size: 1.4rem;
 }
+.navbar .nav-item:hover {
+  Transform: scale(1.1);
+}
 
 /* index */
 .container {
@@ -111,8 +114,8 @@ body .navegacion li {
 /* clubes */
 .trayectoria {
   display: grid;
-  padding: 15px;
-  grid-template-columns: repeat(3, fr);
+  padding: 25px;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(6, 1fr);
   grid-template-areas: "trayectoria-peñarol trayectoria-peñarol trayectoria-peñarol" "trayectoria-madrid trayectoria-madrid trayectoria-madrid" "trayectoria-murcia trayectoria-murcia trayectoria-murcia" "trayectoria-denver trayectoria-denver trayectoria-denver" "trayectoria-dallas trayectoria-dallas trayectoria-dallas" "trayectoria-serbia trayectoria-serbia trayectoria-serbia";
 }
@@ -127,22 +130,21 @@ body .navegacion li {
   grid-area: trayectoria-peñarol;
   display: flex;
   align-items: center;
-  gap: 8px;
   padding: 10px;
+  margin-bottom: 25px;
 }
 .trayectoria .trayectoria-madrid {
   grid-area: trayectoria-madrid;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  gap: 8px;
   padding: 10px;
+  margin-top: 15px;
 }
 .trayectoria .trayectoria-murcia {
   grid-area: trayectoria-murcia;
   display: flex;
   align-items: center;
-  gap: 8px;
   padding: 10px;
 }
 .trayectoria .trayectoria-denver {
@@ -150,14 +152,12 @@ body .navegacion li {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  gap: 8px;
   padding: 10px;
 }
 .trayectoria .trayectoria-dallas {
   grid-area: trayectoria-dallas;
   display: flex;
   align-items: center;
-  gap: 8px;
   padding: 10px;
 }
 .trayectoria .trayectoria-serbia {
@@ -165,25 +165,15 @@ body .navegacion li {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  gap: 8px;
   padding: 10px;
 }
 .trayectoria .trayectoria__imagenpeñarol {
   height: 25vw;
 }
-.trayectoria .trayectoria__imagenmadrid {
-  height: 30vw;
+.trayectoria .trayectoria__imagenmadrid, .trayectoria .trayectoria__imagendenver, .trayectoria .trayectoria__imagenmurcia {
+  height: 35vw;
 }
-.trayectoria .trayectoria__imagenmurcia {
-  height: 25vw;
-}
-.trayectoria .trayectoria__imagendenver {
-  height: 30vw;
-}
-.trayectoria .trayectoria__imagendallas {
-  height: 20vw;
-}
-.trayectoria .trayectoria__imagenserbia {
+.trayectoria .trayectoria__imagendallas, .trayectoria .trayectoria__imagenserbia {
   height: 20vw;
 }
 
