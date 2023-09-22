@@ -1,0 +1,52 @@
+@import "./mixing";
+
+
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "highlights__mago highlights__mago"
+        "highlights__nba highlights__seleccion";
+
+    .video {
+        width: 400px;
+        height: 400px;
+    }
+
+
+    .highlights__mago {
+        @include centrado;
+        height: 550px;
+        padding: 15px;
+        grid-area: highlights__mago;
+    }
+
+    .highlights__nba {
+        display: flex;
+        flex-direction: column;
+        justify-content: $espacio;
+        align-items: $centro;
+        grid-area: highlights__nba;
+
+        .nba-video {
+            width: 90%;
+            margin: 5px;
+
+        }
+
+    }
+
+    .highlights__seleccion {
+        display: flex;
+        flex-direction: column;
+        justify-content: $espacio;
+        align-items: $centro;
+        grid-area: highlights__seleccion;
+
+        .seleccion-video {
+            width: 90%;
+            margin: 5px;
+        }
+    }
+}

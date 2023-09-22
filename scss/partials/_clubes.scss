@@ -1,0 +1,82 @@
+@import "./mixing";
+
+.trayectoria {
+    display: grid;
+    padding: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+        "trayectoria-peñarol trayectoria-peñarol trayectoria-peñarol"
+        "trayectoria-madrid trayectoria-madrid trayectoria-madrid"
+        "trayectoria-murcia trayectoria-murcia trayectoria-murcia"
+        "trayectoria-denver trayectoria-denver trayectoria-denver"
+        "trayectoria-dallas trayectoria-dallas trayectoria-dallas"
+        "trayectoria-serbia trayectoria-serbia trayectoria-serbia";
+
+    .texto-equipo {
+        @include centrado; 
+        font-size: 1.1em;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .trayectoria-peñarol {
+        grid-area: trayectoria-peñarol;
+        display: flex;
+        align-items: $centro;
+        padding: 10px;
+        margin-bottom: 25px;
+    }
+
+    .trayectoria-madrid {
+        grid-area: trayectoria-madrid;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: $centro;
+        padding: 10px;
+        margin-top: 15px;
+    }
+
+    .trayectoria-murcia {
+        grid-area: trayectoria-murcia;
+        display: flex;
+        align-items: $centro;
+        padding: 10px;
+    }
+
+    .trayectoria-denver {
+        grid-area: trayectoria-denver;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: $centro;
+        padding: 10px;
+    }
+
+    .trayectoria-dallas {
+        grid-area: trayectoria-dallas;
+        display: flex;
+        align-items: $centro;
+        padding: 10px;
+    }
+
+    .trayectoria-serbia {
+        grid-area: trayectoria-serbia;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: $centro;
+        padding: 10px;
+    }
+
+    .trayectoria__imagenpeñarol {
+        height: 25vw;
+    }
+
+    .trayectoria__imagenmadrid, .trayectoria__imagendenver , .trayectoria__imagenmurcia{
+        height: 35vw;
+    }
+
+    .trayectoria__imagendallas, .trayectoria__imagenserbia {
+        height: 20vw;
+    }
+
+}

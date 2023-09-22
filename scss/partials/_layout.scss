@@ -1,0 +1,102 @@
+@import "./mixing";
+
+body {
+    background-color: $fondo;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+
+    h1 {
+        font-family: 'Anton', sans-serif;
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .navegacion li {
+        list-style: none;
+    }
+}
+
+.navbar {
+    padding: 2rem;
+    margin-bottom: 100px;
+    background-color: $celeste;
+
+    .navbar-collapse {
+        justify-content: space-between;
+        align-items: $centro;
+    }
+
+    .navbar-nav {
+        font-size: 1.4rem;
+    }
+    .nav-item:hover{
+        Transform:scale(1.1);
+        
+
+    }
+}
+
+.footer {
+    width: 100%;
+    background-color: $celeste;
+    margin-top: 50px;
+
+    .grupo-1 {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 25px 20px;
+
+        .box-1 {
+            @include centrado; 
+            color: black
+        } 
+
+        .box-2 {
+            @include centrado;
+
+            h2{
+                text-decoration: $subrayado;
+            }
+
+            h2, p {
+                color: black;
+                display: flex;
+                flex-direction: row;
+                align-items: $centro;
+                justify-content: $centro;
+            }
+        }
+
+        .box-3 {
+            @include centrado;
+
+            a {
+                display: inline-block;
+
+            }
+
+            h4 {
+                color: black;
+                flex-direction: row;
+                justify-content: $centro;
+                align-items: $centro;
+                text-decoration: $subrayado;
+                padding: 5px;
+            }
+        }
+    }
+}

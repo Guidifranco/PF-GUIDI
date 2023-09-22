@@ -1,0 +1,39 @@
+@import "./mixing";
+
+.seleccion {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "parrafo-seleccion parrafo-seleccion parrafo-seleccion"
+        "seleccion__primerpuesto seleccion__segundopuesto seleccion__tercerpuesto";
+
+    .parrafo-seleccion {
+        grid-area: parrafo-seleccion;
+        font-size: 1.15em;
+        padding: 10px;
+        @include centrado; 
+    }
+
+    .accordion {
+        margin: 25px;
+        padding: 15px;
+    }
+
+    .accordion-body {
+        @include centrado; 
+    }
+
+    .accordion-button {
+        background-color: $celeste;
+        font-size: 1.5rem;
+        @include centrado;
+
+    }
+
+    li {
+        font-size: 1.3em;
+        align-items: $centro;
+        justify-content: $centro;
+    }
+}

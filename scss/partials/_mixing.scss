@@ -1,0 +1,11 @@
+@mixin centrado ($centro: center) {
+    display: flex;
+    align-items: $centro;
+    justify-content: $centro;
+    flex-direction: column;
+}
+
+@mixin subrayado {
+    text-decoration: $subrayado;
+    text-decoration-color: $celeste;
+}

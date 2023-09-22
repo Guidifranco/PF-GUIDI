@@ -5,6 +5,7 @@
 /*letras para los titilos*/
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;700&family=Open+Sans&display=swap");
 /*letras para el body*/
+/* variables */
 body {
   background-color: #33363c;
   font-family: "Open Sans", sans-serif;
@@ -44,29 +45,85 @@ body .navegacion li {
   Transform: scale(1.1);
 }
 
-/* index */
-.container {
+.footer {
+  width: 100%;
+  background-color: #6edff6;
+  margin-top: 50px;
+}
+.footer .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 25px 20px;
+}
+.footer .grupo-1 .box-1 {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
+  color: black;
+}
+.footer .grupo-1 .box-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer .grupo-1 .box-2 h2 {
+  text-decoration: underline;
+}
+.footer .grupo-1 .box-2 h2, .footer .grupo-1 .box-2 p {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.footer .grupo-1 .box-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer .grupo-1 .box-3 a {
+  display: inline-block;
+}
+.footer .grupo-1 .box-3 h4 {
+  color: black;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  text-decoration: underline;
+  padding: 5px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .container #titulo_principal {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #edebd7;
-  font-size: 3em;
+  flex-direction: column;
   text-decoration: underline;
   text-decoration-color: #6edff6;
+  color: #edebd7;
+  font-size: 3em;
 }
 .container .titulo-secundario {
   display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: 2.5em;
-  color: #edebd7;
+  flex-direction: column;
   text-decoration: underline;
   text-decoration-color: #6edff6;
+  font-size: 2.5em;
+  color: #edebd7;
 }
 .container .img-principal {
   height: 700px;
@@ -86,15 +143,16 @@ body .navegacion li {
 }
 
 .news {
-  margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
 }
 .news #titulo-noticia {
-  font-size: 2.5rem;
   text-decoration: underline;
   text-decoration-color: #6edff6;
+  font-size: 2.5rem;
 }
 
 .carousel {
@@ -102,16 +160,20 @@ body .navegacion li {
   margin-bottom: 55px;
   padding: 5px;
 }
-.carousel #carouselNoticias .carousel-inner .carousel-item img {
-  width: 75vw;
+.carousel .carousel-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
 }
-.carousel a {
+.carousel .carousel-item a {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  width: 100%;
 }
 
-/* clubes */
 .trayectoria {
   display: grid;
   padding: 25px;
@@ -122,6 +184,8 @@ body .navegacion li {
 .trayectoria .texto-equipo {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
   font-size: 1.1em;
   padding: 10px;
   margin: 5px;
@@ -177,7 +241,6 @@ body .navegacion li {
   height: 20vw;
 }
 
-/* selección */
 .seleccion {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -189,7 +252,9 @@ body .navegacion li {
   font-size: 1.15em;
   padding: 10px;
   display: flex;
+  align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 .seleccion .accordion {
   margin: 25px;
@@ -197,14 +262,17 @@ body .navegacion li {
 }
 .seleccion .accordion-body {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .seleccion .accordion-button {
   background-color: #6edff6;
   font-size: 1.5rem;
+  display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 .seleccion li {
   font-size: 1.3em;
@@ -212,7 +280,6 @@ body .navegacion li {
   justify-content: center;
 }
 
-/* multimedia */
 .highlights {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -225,9 +292,9 @@ body .navegacion li {
 }
 .highlights .highlights__mago {
   display: flex;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
   height: 550px;
   padding: 15px;
   grid-area: highlights__mago;
@@ -255,7 +322,6 @@ body .navegacion li {
   margin: 5px;
 }
 
-/* contacto */
 .formulario {
   font-size: 1.3rem;
   padding: 5px;
@@ -263,61 +329,8 @@ body .navegacion li {
   border: 2px solid black;
 }
 
-.footer {
-  width: 100%;
-  background-color: #6edff6;
-  margin-top: 50px;
-}
-.footer .grupo-1 {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 25px 20px;
-}
-.footer .grupo-1 .box-1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: black;
-}
-.footer .grupo-1 .box-2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.footer .grupo-1 .box-2 h2 {
-  text-decoration: underline;
-}
-.footer .grupo-1 .box-2 h2, .footer .grupo-1 .box-2 p {
-  color: black;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 5px;
-}
-.footer .grupo-1 .box-3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.footer .grupo-1 .box-3 a {
-  display: inline-block;
-}
-.footer .grupo-1 .box-3 h4 {
-  color: black;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-decoration: underline;
-  padding: 5px;
-}
-
+/* mixin */
+/* queries */
 /* mediaqueries */
 @media screen and (max-width: 767px) {
   .navbar-brand {
