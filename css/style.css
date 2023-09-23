@@ -126,8 +126,10 @@ body .navegacion li {
   color: #edebd7;
 }
 .container .img-principal {
-  height: 700px;
-  width: 600px;
+  height: 60vw;
+  width: 50vw;
+  /* height: 700px;
+  width: 600px; */
   margin: 15px;
   background-color: #33363c;
 }
@@ -234,10 +236,13 @@ body .navegacion li {
 .trayectoria .trayectoria__imagenpeñarol {
   height: 25vw;
 }
-.trayectoria .trayectoria__imagenmadrid, .trayectoria .trayectoria__imagendenver, .trayectoria .trayectoria__imagenmurcia {
+.trayectoria .trayectoria__imagenmadrid,
+.trayectoria .trayectoria__imagendenver,
+.trayectoria .trayectoria__imagenmurcia {
   height: 35vw;
 }
-.trayectoria .trayectoria__imagendallas, .trayectoria .trayectoria__imagenserbia {
+.trayectoria .trayectoria__imagendallas,
+.trayectoria .trayectoria__imagenserbia {
   height: 20vw;
 }
 
@@ -338,7 +343,7 @@ body .navegacion li {
   }
 }
 /* Media del index */
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 768px) {
   .container .texto-principal {
     width: 75%;
   }
@@ -354,7 +359,7 @@ body .navegacion li {
   }
 }
 /* Media del Footer */
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 768px) {
   .grupo-1 {
     width: 100%;
     max-width: 767px;
@@ -373,7 +378,7 @@ body .navegacion li {
   }
 }
 /* Media de los clubes */
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 768px) {
   .trayectoria {
     display: flex;
     flex-direction: column;
@@ -407,7 +412,7 @@ body .navegacion li {
   }
 }
 /* Media de la Seleccion */
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 768px) {
   .container .titulo-secundario {
     font-size: 2.6em;
   }
@@ -428,7 +433,7 @@ body .navegacion li {
   }
 }
 /* Media de Multimedia */
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 768px) {
   .highlights {
     display: flex;
     flex-direction: column;
